@@ -40,11 +40,10 @@
         <a href="https://carto.com/attribution">CARTO</a>'
   }).addTo(map);
 */
-  L.tileLayer('https://maptiles.p.rapidapi.com/en/map/v1/{z}/{x}/{y}.png?rapidapi-key={apikey}', {
-	attribution: '&copy; <a href="http://www.maptilesapi.com/">MapTiles API</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-	apikey: 'JIEYBkC9TdTVfsbUpIsd',
-	maxZoom: 15
-}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+	maxZoom: 15,
+	attribution: '&copy; OpenStreetMap France | &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
     
   /* Display a point marker with pop-up text */
   L.marker([47.68594387574102, -0.870815554784001]).addTo(map) // EDIT marker coordinates
